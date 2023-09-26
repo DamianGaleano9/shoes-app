@@ -7,7 +7,6 @@ import {Pages} from "./components/pages";
 function App() {
   return (
     <div className="App">
-      <h1>Shoes App</h1>
       <NavBar />
       <Products/>
       <Pages/>
