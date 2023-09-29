@@ -14,11 +14,11 @@ export const NavBar = () => {
                     <Link to="/login">Login</Link>
                 </li>
 
-
-                <li>
-                    <Link to="/cart">Cart</Link>
-                </li>
             </ul>
+
+            <div className="cart">
+                
+            </div>
         </nav>
     )
 }
