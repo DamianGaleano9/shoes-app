@@ -13,5 +13,4 @@ export default class Checkout extends Component {
             </div>
         )
     }
-
 }

@@ -1,9 +1,12 @@
 import React from "react";
 
- function Home (){
+ function CartPage (){
     return (
         <div>
             Cart Page
         </div>
     )
 }
+
+
+export default CartPage;
