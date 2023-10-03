@@ -4,6 +4,9 @@ import { Products } from "./components/products";
 import {Pages} from "./components/pages/home";
 
 
+import 'font-awesome/css/font-awesome.min.css';
+
+
 function App() {
   return (
     <div className="App">
