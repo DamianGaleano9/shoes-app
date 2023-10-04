@@ -1,10 +1,11 @@
 import React from "react";
 import { NavBar } from "./components/nav-bar/navbar";
-import { Products } from "./components/products";
-import {Pages} from "./components/pages/pages";
+import { Checkout } from "./components/checkout/checkout";
 
+import {Cart} from "./components/cart/cart";
 
-import 'font-awesome/css/font-awesome.min.css';
+import "font-awesome/css/font-awesome.min.css";
+
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
       <NavBar />
       <Products/>
       <Pages/>
+      <Cart/>
+      <Checkout/>
     </div>
   );
 }

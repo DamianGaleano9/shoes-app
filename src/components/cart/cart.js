@@ -9,7 +9,7 @@ export default class Cart extends Component {
     render() {
         return (
             <div>
-                <i class="fa-solid fa-cart-shopping">Cart</i>
+                Cart
             </div>
         )
     }
