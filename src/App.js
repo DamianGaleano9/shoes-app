@@ -1,10 +1,12 @@
 import React from "react";
 import { NavBar } from "./components/nav-bar/navbar";
 import { Checkout } from "./components/checkout/checkout";
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { CheckoutPage } from "./components/checkout/checkout-page";
 import {Cart} from "./components/cart/cart";
+import CartPage from "./components/pages/cart-page";
 
-import "font-awesome/css/font-awesome.min.css";
+
 
 
 
@@ -12,8 +14,18 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+    <Router>
+      <Switch>
+        <Route path="/cart"><CartPage/></Route>
+        <Route path="/checkout"><CheckoutPage/></Route>
+
+
+      </Switch>
+
+
+    </Router> 
+
       <Products/>
-      <Pages/>
       <Cart/>
       <Checkout/>
     </div>
