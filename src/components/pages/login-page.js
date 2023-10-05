@@ -1,12 +1,12 @@
 import React from "react";
 
- function Login (){
+ function LoginPage (){
     return (
         <div>
-            Login
+            LoginPage
         </div>
     )
 }
 
 
-export default Login;
+export default LoginPage;
