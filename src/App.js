@@ -1,36 +1,38 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 import { NavBar } from "./components/nav-bar/navbar";
-import { Checkout } from "./components/checkout/checkout";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { CheckoutPage } from "./components/pages/checkout-page";
-import {Cart} from "./components/cart/cart";
-import {CartPage} from "./components/pages/cart-page";
-import {Home} from "./components/pages/home";
-import {Login} from "./components/pages/login";
-import {RegisterPage} from "./components/register/register";
-import {Products} from "./components/products/products";
+import Checkout from "./components/checkout/checkout";
+import CheckoutPage from "./components/pages/checkout-page";
+import Cart from "./components/cart/cart";
+import CartPage from "./components/pages/cart-page";
+import Home from "./components/pages/home";
+import LoginPage from "./components/pages/login-page";
+import RegisterPage from "./components/pages/register-page";
+import Products from "./components/products/products";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/cart" component={Cart}/>
-        <Route path="/checkout"component={Checkout}/>
-        <Route path="/checkout-page"component={CheckoutPage}/>
-        <Route path="/cart-page"component={CartPage}/>
+      <Router>
+        <NavBar />
 
-        <Route path="/register" component={RegisterPage}/>
-        <Route path="/login" component={Login}/>
-        <Route path="/products" component={Products}/>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/cart" component={Cart} />
+          <Route path="/checkout" component={Checkout} />
+          <Route path="/checkout-page" component={CheckoutPage} />
+          <Route path="/cart-page" component={CartPage} />
 
-
-      </Switch>
+          <Route path="/registerpage" component={RegisterPage} />
+          <Route path="/login-page" component={LoginPage} />
+          <Route path="/products" component={Products} />
 
 
-    </Router> 
+        </Switch>
+
+
+      </Router>
 
     </div>
   );
