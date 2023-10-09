@@ -1,5 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { NavBar } from "./components/nav-bar/navbar";
 import Checkout from "./components/checkout/checkout";
@@ -13,25 +15,26 @@ import Products from "./components/products/products";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Router>
-        <NavBar />
+        <div>
 
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/cart" component={Cart} />
-          <Route path="/checkout" component={Checkout} />
-          <Route path="/checkout-page" component={CheckoutPage} />
-          <Route path="/cart-page" component={CartPage} />
+          <NavBar />
 
-          <Route path="/registerpage" component={RegisterPage} />
-          <Route path="/login-page" component={LoginPage} />
-          <Route path="/products" component={Products} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/cart" component={Cart} />
+            <Route path="/checkout" component={Checkout} />
+            <Route path="/checkout-page" component={CheckoutPage} />
+            <Route path="/cart-page" component={CartPage} />
 
+            <Route path="/registerpage" component={RegisterPage} />
+            <Route path="/login-page" component={LoginPage} />
+            <Route path="/products" component={Products} />
 
-        </Switch>
+          </Switch>
 
-
+        </div>
       </Router>
 
     </div>
