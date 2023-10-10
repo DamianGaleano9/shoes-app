@@ -1,9 +1,7 @@
 import React from "react";
-import '../node_modules/font-awesome/css/font-awesome.min.css';
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { NavBar } from "./components/nav-bar/navbar";
+import  NavBar  from "./components/nav-bar/navbar";
 import Checkout from "./components/checkout/checkout";
 import CheckoutPage from "./components/pages/checkout-page";
 import Cart from "./components/cart/cart";
@@ -12,6 +10,12 @@ import Home from "./components/pages/home";
 import LoginPage from "./components/pages/login-page";
 import RegisterPage from "./components/pages/register-page";
 import Products from "./components/products/products";
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+import {faCartShopping, faRightToBracket} from '@fortawesome/free-solid-svg-icons';
+
+library.add(faCartShopping, faRightToBracket)
 
 function App() {
   return (
