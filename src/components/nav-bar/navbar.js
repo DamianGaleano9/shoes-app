@@ -10,7 +10,7 @@ const NavBar = () => {
 
                 <div className="nav-link-wrapper">
                     <NavLink to="/">
-                        <img src="public/statics/assets/images/logo.jpg" alt="jordan"/>
+                        <img src="public/statics/assets/images/logo.jpg" alt="jordan" />
                     </NavLink>
 
                 </div>
@@ -22,6 +22,14 @@ const NavBar = () => {
 
                 </div>
 
+
+
+            </div>
+
+
+            <div className="right-nav">
+
+
                 <div className="nav-link-wrapper">
                     <NavLink to="/login">
                         <FontAwesomeIcon icon={faRightToBracket} />
@@ -30,11 +38,13 @@ const NavBar = () => {
 
                 </div>
 
-            </div>
-            <div className="right-nav">
-                <NavLink to="/cart">
-                    <FontAwesomeIcon icon={faCartShopping} />
-                </NavLink>
+                <div className="nav-link-wrapper">
+                    <NavLink to="/cart">
+                        <FontAwesomeIcon icon={faCartShopping} />
+                    </NavLink>
+
+                </div>
+
             </div>
         </div>
 

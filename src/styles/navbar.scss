@@ -1,16 +1,19 @@
 .navbar-wrapper {
     display: flex;
-    background-color: #363333;
-    height: 30px;
-    color: $orange;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: $orange;
+
 
     .left-nav {
         display: flex;
         align-items: center;
 
 
-    
-        margin-right: 20px;
+        .nav-link-wrapper {
+            margin-left: 20px;
+        }
     }
 
     img {
@@ -19,6 +22,12 @@
     }
 
 
-  
-}
+    .right-nav {
+        display: flex;
+        align-items: center;
 
+        .nav-link-wrapper {
+            margin-left: 20px;
+        }
+    }
+}
