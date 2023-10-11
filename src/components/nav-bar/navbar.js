@@ -1,7 +1,8 @@
-import React from "react";
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRightToBracket, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+
+import logoJordan from '../images/logos/air-jordan-logo-png-transparent.png';
 
 const NavBar = () => {
     return (
@@ -9,8 +10,8 @@ const NavBar = () => {
             <div className="left-nav">
 
                 <div className="nav-link-wrapper">
-                    <NavLink to="/">
-                        <img src="public/statics/assets/images/logo.jpg" alt="jordan" />
+                    <NavLink to="/" >
+                        <img src={logoJordan} />
                     </NavLink>
 
                 </div>
