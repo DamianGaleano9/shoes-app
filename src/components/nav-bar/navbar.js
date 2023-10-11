@@ -4,14 +4,16 @@ import { faRightToBracket, faCartShopping } from '@fortawesome/free-solid-svg-ic
 
 import logoJordan from '../images/logos/logoMain.png';
 
+
 const NavBar = () => {
     return (
         <div className="navbar-wrapper">
             <div className="left-nav">
 
-                <div className="nav-link-jordan">
+                <div className="nav-link-jordan rotating">
                     <NavLink to="/" >
                         <img src={logoJordan} />
+
                     </NavLink>
 
                 </div>
@@ -33,7 +35,7 @@ const NavBar = () => {
 
                 <div className="nav-link-wrapper">
                     <NavLink to="/login">
-                        <FontAwesomeIcon icon={faRightToBracket} />
+                        <FontAwesomeIcon icon={faRightToBracket} className='icon'/>
                     </NavLink>
 
 
@@ -41,7 +43,7 @@ const NavBar = () => {
 
                 <div className="nav-link-wrapper">
                     <NavLink to="/cart">
-                        <FontAwesomeIcon icon={faCartShopping} />
+                        <FontAwesomeIcon icon={faCartShopping} className='icon'/>
                     </NavLink>
 
                 </div>
