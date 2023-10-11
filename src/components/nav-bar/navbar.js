@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRightToBracket, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 import logoJordan from '../images/logos/logoMain.png';
+import ball from '../images/backgrounds/1000_F_152089943_5BqxIJgemQ8TG79pbmYsRFV0vsAlTEqO.jpg';
 import background from '../images/backgrounds/Logo.png';
 const NavBar = () => {
     return (
@@ -38,10 +39,9 @@ const NavBar = () => {
                     <NavLink to="/login">
                         <FontAwesomeIcon icon={faRightToBracket} className='icon'/>
                     </NavLink>
-
-
                 </div>
 
+                
                 <div className="nav-link-wrapper">
                     <NavLink to="/cart">
                         <FontAwesomeIcon icon={faCartShopping} className='icon'/>
