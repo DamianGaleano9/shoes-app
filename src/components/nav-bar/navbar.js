@@ -3,16 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRightToBracket, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 import logoJordan from '../images/logos/logoMain.png';
-
-
+import background from '../images/backgrounds/Logo.png';
 const NavBar = () => {
     return (
-        <div className="navbar-wrapper">
+        <div className="navbar-wrapper ball" style={{ backgroundImage: `url(${background})`}}>
+
+            
             <div className="left-nav">
 
-                <div className="nav-link-jordan rotating">
+                <div className="nav-link-jordan ">
                     <NavLink to="/" >
-                        <img src={logoJordan} />
+                        <img src={logoJordan} className='rotating' style={{ boxShadow: '0 2px 0px -1px rgba(0, 0, 0, 0.1'}}/>
 
                     </NavLink>
 

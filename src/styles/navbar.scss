@@ -7,15 +7,20 @@
     color: white !important;
 
 
+    .ball {
+        height: 20px;
+    }
+    
+
     .left-nav {
         display: flex;
         align-items: center;
 
-        
+
 
         .nav-link-jordan {
             margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 50px;
 
             a {
                 text-decoration: none;
@@ -23,37 +28,52 @@
             }
 
             img {
-                height: 50px;
+                height: 60px;
                 width: 50px;
 
             }
-        }
 
-        .nav-link-products {
-            a {
-                text-decoration: none;
-                color: rgb(0, 0, 0);
-
+            .rotating {
+                animation: rotateY 5s linear infinite;
             }
+
+            @keyframes rotateY {
+                from {
+                    transform: rotateY(0deg);
+                }
+
+                to {
+                    transform: rotateY(360deg);
+                }
+            }
+
         }
     }
+}
 
-    
+.nav-link-products {
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 1.5em;
+
+    }
+}
 
 
-    .right-nav {
-        display: flex;
-        align-items: center;
+.right-nav {
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
 
-        .nav-link-wrapper {
-            margin-left: 20px;
-            margin-right: 10px;
+    .nav-link-wrapper {
+        margin-left: 30px;
+        margin-right: 40px;
 
         .icon {
             color: black;
         }
-            
 
-        }
+
     }
 }
