@@ -9,7 +9,8 @@ import CartPage from "./components/pages/cart-page";
 import Home from "./components/pages/home";
 import LoginPage from "./components/pages/login-page";
 import RegisterPage from "./components/pages/register-page";
-import Products from "./components/products/products";
+import Products from "./components/product/products-item";
+import ProductsContainer from "./components/product/products-container";
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -26,6 +27,7 @@ function App() {
           <NavBar />
 
           <Switch>
+            <ProductsContainer/>
             <Route exact path="/" component={Home} />
             <Route path="/cart" component={Cart} />
             <Route path="/checkout" component={Checkout} />

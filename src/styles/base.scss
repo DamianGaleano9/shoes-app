@@ -1,7 +1,21 @@
-body {
+* {
     margin: 0px;
-    font-family: 'Bungee Shade', cursive;
+    padding: 0px;
+    font-family: 'Space Mono', monospace;
+
 }
+
+
+// .container {
+//     max-width: 100%;
+//     width: 100%;
+//     min-height: 100vh;
+//     margin: 0;
+//     padding: 0 15px;
+//     box-sizing: border-box;
+
+
+// }
 
 
 @media (max-width: 768px) {
