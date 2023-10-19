@@ -9,7 +9,7 @@ export default class ProductContainer extends Component {
         super();
 
         this.state = {
-            pagename: "Welcome to my eCommerce",
+            pageName: "Welcome to my eCommerce",
             data : [
                 {name: "aj1dior"},
                 {name: "banned"},
@@ -26,19 +26,30 @@ export default class ProductContainer extends Component {
 
             ]
         }
+
+
+        this.handlePageNameUpdate = this.handlePageNameUpdate.bind(this);
     }
 
 
     productsItems() {
         return this.state.data.map(item => {
-            return <ProductItem name={item.name} price={2.122}/>
+            return <ProductItem name={item.name} url={"Google"}/>
         })
     }
+
+    handlePageNameUpdate() {
+        this.setState({
+            pageName: "Welcome Damian"
+        })
+    }
+
+
     render () {
         return (
             <div>
                 {this.productsItems()} 
-                {this.state.pagename}
+                {this.state.pageName}
             </div>
         )
     }
